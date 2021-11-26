@@ -1,4 +1,4 @@
-if ::Spree::BaseMailer.exists?
+if defined? ::Spree::BaseMailer
   module Spree
     class VendorMailer < ::Spree::BaseMailer
       def vendor_notification_email(order_id, vendor_id)
