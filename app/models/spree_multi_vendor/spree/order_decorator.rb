@@ -80,9 +80,9 @@ module SpreeMultiVendor::Spree::OrderDecorator
   end
 
   def send_notification_mails_to_vendors
-    vendor_ids.each do |vendor_id|
-      Spree::VendorMailer.vendor_notification_email(id, vendor_id).deliver_later
-    end
+    # vendor_ids.each do |vendor_id|
+    #  Spree::VendorMailer.vendor_notification_email(id, vendor_id).deliver_later
+    # end
   end
 
   # we're leaving this on purpose so it can be easily modified to fit desired scenario
