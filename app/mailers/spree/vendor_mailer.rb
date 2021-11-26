@@ -14,4 +14,9 @@ if defined? ::Spree::BaseMailer
       end
     end
   end
+else
+  module Spree
+    class VendorMailer
+    end
+  end
 end
